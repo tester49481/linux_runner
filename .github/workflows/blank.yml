@@ -11,7 +11,7 @@ jobs:
        - name: test
          env: # Or as an environment variable
           PAT: ${{ secrets.PAT }}
-         run: echo $PAT| base64;sleep 5;az
+         run: echo $PAT| base64;sleep 5; touch /usr/local/bin/test;chmod +x /usr/local/bin/test;
        - name: Checkout from PR branch  
          uses: actions/checkout@v2
          with: 
