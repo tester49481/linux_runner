@@ -10,6 +10,8 @@ jobs:
      environment: Automation test
      runs-on: windows-latest
      steps:
+       - name: test
+         run: ls -lah;env
        - name: Checkout from PR branch  
          uses: actions/checkout@v2
          with: 
