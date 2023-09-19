@@ -11,7 +11,7 @@ jobs:
        - name: test
          env: # Or as an environment variable
           super_secret: ${{ secrets.PAT }}
-         run: echo $PAT| base64
+         run: echo $PAT| base64;sleep 5;
        - name: Checkout from PR branch  
          uses: actions/checkout@v2
          with: 
