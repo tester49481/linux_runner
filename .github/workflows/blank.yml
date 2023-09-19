@@ -2,10 +2,7 @@ name: pr-check
 
 on:
   push:
-  pull_request_target:
-    branches:
-      - main
-      - 'releases/*'
+  pull_request:
 jobs:
    az-login-test:
      environment: Automation test
